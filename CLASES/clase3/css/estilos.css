@@ -1,0 +1,38 @@
+/* Selector {
+    Propiedades
+    nombre: valor;    
+}*/
+
+/* Tipos de selectores en css */
+/* 
+Etiqueta Escribimos el nombre de la etiqueta (table, p, etc) --> La regla de estilo se aplica a todas las etiquetas de la pagina
+Clase .clase{} --> La regla de estilo se aplican a objetos que no tienen nada en comun
+Id  #id del elemento --> La regla de estilo se aplica a ese unico elemento
+*/
+
+/* "Peso de estilos: Especificidad
+(0,0,1) - (0,0,1) --> Misma especificidad (Minima especificidad) - Gana el que esta mas abajo (Lo ultimo sobrescribe lo anterior)
+
+(0,0,1) --> Especificidad etiqueta --> Menor especificidad
+(0,1,0) --> Especificidad clases
+(1,0,0) --> Especifidad id --> Mayor especificidad
+
+*/
+
+table,
+th,
+td {
+  border: 1px solid black;
+  /* border width, border style, border color */
+}
+
+table {
+  border-color: blue;
+}
+
+#tabla-materias{
+    border-color: magenta;
+}
+.verde{
+    border-color: green;
+}

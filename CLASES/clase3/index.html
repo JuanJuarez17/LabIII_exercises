@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos2.css" />
+    <script src="./js/scripts.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Listas</h1>
+
+    <button id="btnOpen">Abrir</button>
+
+    <!-- Ordered list (Listas ordenadas) Numeros -->
+    <ol type="I">
+      <li>Lunes</li>
+      <li>Martes</li>
+      <li>Miercoles</li>
+      <li>Jueves</li>
+      <li>Viernes</li>
+    </ol>
+
+    <!-- Unordered lists (Listas sin order) Viñetas-->
+    <ul type="square">
+      <li>Harina</li>
+      <li>Azucar</li>
+      <li>Huevos</li>
+      <li>Leche</li>
+      <li>Chocolate</li>
+      <br />
+
+      <!-- Ejemplo con hipervinculos -->
+      <!-- # anula el hipervinculo -->
+      <!-- Buenas practica durante el desarrollo no dejar hipervinculos vacios -->
+      <li><a href="#">Google</a></li>
+      <li>
+        <a href="#"> <img src="./img/google.png" alt="Logo Google" /></a>
+      </li>
+      <li><a href="#">Clarin</a></li>
+      <li><a href="#">La Nacion</a></li>
+      <li><a href="#">Infobae</a></li>
+    </ul>
+
+    <dl>
+      <dt>JS</dt>
+      <dd>Lenguaje de programacion</dd>
+      <dt>Phyton</dt>
+      <dd>Otro lenguaje de programacion</dd>
+    </dl>
+
+    <details>
+      <summary>JavaScript</summary>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, iusto
+        numquam ducimus ipsam voluptatum quis tempore quia quas quidem nihil
+        vitae eius facilis odio. Illum exercitationem enim corporis quia nam!
+      </p>
+    </details>
+
+    <!-- La etiqueta dialog es modal (se superpone encima de otros elementos del html), debe explicitarse la propiedad open para que la misma aparezca en el html -->
+    <!-- <dialog open> -->
+    <!-- Contorlo la visibilidad del dialog con un botton -->
+    <dialog>
+      <button id="btnClose"><img src="./img/cerrar.png" alt="Cerrar dialog"></button>
+      <img src="./img/google.png" alt="Logo Google" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi maiores
+        neque unde distinctio, veritatis quis sit aut accusantium. Enim nostrum
+        accusamus animi minima ipsam aut veniam vitae cumque inventore at!
+      </p>
+    </dialog>
+  </body>
+</html>

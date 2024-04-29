@@ -1,0 +1,72 @@
+/* *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  height: 100px;
+  width: 500px;
+  border: 2px solid black;
+  padding:  10px;
+} */
+
+/* h1{
+  display: inline;
+  box-sizing: border-box;
+  box-sizing: content-box --> Medida del contenido
+  box-sizing: border-box --> Medida de la caja
+  height: 200 px;
+  width: 500 px;
+} */
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    /* Colapsan todos los bordes y los unifico */
+}
+
+td{
+    padding: 10px 5px;
+    text-align: center;
+    /* height: 100px;
+    width: 200px; */
+}  
+
+/* hover --> Pasar el mouse por encima */
+dialog:hover{
+  background-color: blueviolet;
+}
+
+thead{
+  background-color: aqua;
+}
+
+#greenData{
+  background-color: green;
+}
+
+#redData{
+  background-color: red;
+}
+
+#blueData{
+  background-color: blue;
+}
+
+/* Si tenemos una etiqueta a que dentro tiene una imagen */
+a > img{
+  height: 20px;
+}
+
+dialog{
+  width: 600px;
+}
+
+/* Si tenemos una etiqueta button que dentro tiene una imagen */
+button > img{
+  height: 20px;
+}

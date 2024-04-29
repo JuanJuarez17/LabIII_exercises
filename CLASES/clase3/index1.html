@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tablas</h1>
+    <table id="tabla-materias" class="verde">
+      <thead>
+        <tr>
+          <!-- th*5 -->
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miercoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>Programacion III</td> -->
+          <td rowspan="2">Programacion III</td>
+          <!-- Para expandir columna -->
+          <td>Laboratorio III</td>
+          <td>Organizacion</td>
+          <td>Organizacion</td>
+          <td>Investigacion</td>
+        </tr>
+        <tr>
+          <!-- <td>Programacion III</td> Tengo que borra este si quiero expandir la celda de arriba -->
+          <td>Laboratorio III</td>
+          <td colspan="2">Organizacion</td>
+          <!-- Para expandir fila -->
+          <!-- <td>Organizacion</td> Esta la tengo que borrar si quiero expandir la celda de al aldo -->
+          <td>Investigacion</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Horario de 18:30 a 22:30</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+
+    <table>
+      <tr class="greenData">
+        <td>A</td>
+        <td>B</td>
+        <td rowspan="3">C</td>
+        <td>D</td>
+      </tr>
+      <tr class="redData">
+        <td rowspan="2">E</td>
+        <td>F</td>
+
+        <td rowspan="3">G</td>
+      </tr>
+      <tr>
+        <td>H</td>
+      </tr>
+      <tr class="blueData">
+        <td>I</td>
+        <td>J</td>
+        <td>K</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table>
+      <tr>
+        <td colspan="3">A</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td colspan="2">D</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td colspan="4">F</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+        <td>J</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table>
+      <tr>
+        <td colspan="3">A</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td colspan="2" rowspan="2">D</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td rowspan="2">J</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+    </table>
+  </body>
+</html>

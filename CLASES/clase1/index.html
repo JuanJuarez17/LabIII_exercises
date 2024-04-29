@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Nos dice que esta en html 5 -->
+<html lang="en">
+  <head>
+    <!-- Las etiquetas meta provienen de metadata y seon selfclosing, no tienen apertura y cierre -->
+    <meta charset="UTF-8" />
+    <!-- !charset juego de caracteres de la pagina, UTF-8 caracteres occidentales -->
+    <!-- !Esta etiqueta tiene que ver con que nuestra pagina sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport ventana visible> -->
+    <!-- content contenido igual al ancho del dispositivo> -->
+    <!-- initial-scale=1.0 la escala inicial aparece sin zoom -->
+    <title>Titulo de la pagina</title>
+    <!-- Etiqueta typescript de la pagina -->
+    <!-- Abrimos una etiqueta de style 
+    <style>
+        p{
+            background-color: red;
+        }
+    </style>
+    En este caso embebimos codigo CSS dentro de HTML, lo cual es mala practica
+    -->
+
+    <!-- Para pedir un archivo css desde el html -->
+    <link rel="stylesheet" href="estilos.css" />
+
+    <!-- Esta etiqueta me permite escribir codigo JS dentro del html -->
+    <!-- <script>
+        function saludar(){
+            alert("Hola mundo");
+        }
+    </script> -->
+    <!-- Tambien es una mala practica -->
+
+    <!-- Para pedir un archivo js desde html -->
+    <script src="scripts3.js"></script>
+
+    <!-- <script src="scripts2.js" defer></script> -->
+    <!-- Con defer retraso la ejecucion del codigo js hasta que temrine de cargar la pagina, pero de dicha manera retraso todo el codigo java script cuando algunas cosas si se podrian ir haciendo. Tema de asincronia. -->
+  </head>
+
+  <body>
+    <h1>Titulo engañoso</h1>
+    <!-- Titulo principal. Debe haber uno por pagina web -->
+    <!-- Reglas de estilo
+    <h1 style="background-color: rgb(136, 15, 96);">Titulo engañoso</h1>
+    Aplicamos un estilo en linea, debido a que se aplica directamente sobre la etiqueta
+    NO es una buena practica, el estilo se maneja desde CSS -->
+    <h2>Titulo engañoso</h2>
+    <!-- Subtitulo -->
+    <h3>Titulo engañoso</h3>
+    <!-- Subtitulo -->
+    <h4>Titulo engañoso</h4>
+    <h5>Titulo engañoso</h5>
+    <h6>Titulo engañoso</h6>
+
+    <!-- Etiqueta parrafo -->
+    <!-- lorem - Me da el parrafo por defecto -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure eius
+      recusandae maiores ab ducimus maxime fugit vero dolor itaque, nobis at
+      necessitatibus nesciunt inventore. Quo expedita ad enim distinctio eius.
+    </p>
+
+    <!-- lorem*3 - Me da 3 parrafos -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem
+      voluptatibus, totam aliquam, modi quos quia optio dolorum ullam ea
+      suscipit. Expedita, reiciendis iure maxime vero incidunt natus. Hic,
+      voluptate. Porro quas magnam voluptates ut unde vel eos suscipit culpa.
+      Sunt nam error cum odio molestias quidem voluptatibus amet. Modi
+      laudantium aliquid pariatur sapiente ab, quas doloribus odio nulla
+      eligendi. Inventore, ullam! Nobis harum fuga voluptate? Labore voluptate
+      cumque provident corrupti. Accusamus autem in, illum beatae nemo quis.
+      Quas consectetur iusto ad ipsum fugiat nesciunt voluptatem qui doloribus
+      in odio.
+    </p>
+
+    <!-- lorem50 - Me da parrafo 50 palabras -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+      fugiat veniam vero molestias omnis, delec tus blanditiis ex. Facere quia
+      ex numquam quisquam distinctio libero voluptatibus itaque, odit eius
+      deserunt dolorem voluptatem vitae maiores harum aperiam ducimus eos error!
+      Eaque voluptatibus eligendi earum ipsam consequatur obcaecati recusandae
+      cupiditate, ut odio culpa.
+    </p>
+
+    <!-- Abreviaturas para parrafos
+    p>lorem200 - Abreviatura para hacer un parrafo que contenga lorem de 200 palabras
+    p*3>lorem - Abreviatura para hacer 3 parrafos con un lorem dentro
+    p>lorem200*2 - Abreviatura para hacer un parrafo que contenga 2 lorem de 200 palabras -->
+
+    <!-- Boton
+    Cuando alguien haga click en el mismo, ejecutar el codigo JS de la propiedad -->
+
+    <!-- Inyecto codigo JS dentro de HTML, lo cual tampoco es una buena practica -->
+    <!-- <button onclick="alert('Hola mundo')">Obtener Saludo</button> -->
+    <!-- Cuando tengo que utilizar JS debo escribir comillas simples '' sino html arroja error -->
+
+    <!-- Otra forma de hacer lo mismo es, pero tambien es una mala practica -->
+    <!-- <button onclick="saludar()">Obtener Saludo</button> -->
+    <!-- <button onclick="saludar()">Obtener Saludo</button> -->
+
+    <!-- La manera correcta de relacion un script de JS a un boton en HTML es utilizando una propiedad-->
+    <button id="btnSaludo">Obtener Saludo</button>
+  </body>
+</html>
