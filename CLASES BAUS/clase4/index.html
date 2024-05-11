@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./matematicas.js"></script> 
+    <!-- Se guarda la funcion sumar que se encuentra en el script matematicas.js -->
+    <script src="./otroArchivo.js"></script>
+    <!-- Se guarda la funcion sumar que se encuentra en el script otroArchivo.js -->
+    <!-- Aqui se produce un elipsamiento de funciones, como ambas tienen el mismo nombre, la que queda guardada es la ultima funcion leida por el interprete, es decir la funcion sumar de otroArchivo.js -->
+    <script src="./closure.js"></script>
+    <!-- Utilizando closure evito este problema de eclipsamiento entre funciones, quizas al desarrollar utilizo en nombre de una funcion que se encuentra definida en otro script con todos los riesgos que conlleva -->
+    <!-- Con closure me aseguro que accedo a la funcion que a mi me interesa -->
+    <script src="./index.js"></script>
+    <title>Modulos</title>
+</head>
+<body>
+    
+
+<!-- var - Scope global, se cuelga de window  -->
+<!-- let y const - Tienen scope de bloque -->
+
+
+</body>
+</html>

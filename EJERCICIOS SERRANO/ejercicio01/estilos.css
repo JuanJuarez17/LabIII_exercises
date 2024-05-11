@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  height: 13.5px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid red;
+  width: max-content;
+}
+
+img{
+  height: 200px;
+  width: 200px;
+}
+

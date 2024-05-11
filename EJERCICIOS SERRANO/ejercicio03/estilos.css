@@ -1,0 +1,38 @@
+.headerStyle {
+  text-align: center;
+  background-color: rgb(43, 226, 73);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-size: 13, 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.colorViolet {
+  background-color: violet;
+}
+
+table,
+th {
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  opacity: 75%;
+  box-shadow: 10px 10px 10px 10px black;
+}
+
+img:hover{
+  opacity: 100%;
+}
+
+#inpEmail, #inpPassword{
+  border: 2.5px solid blue;
+}

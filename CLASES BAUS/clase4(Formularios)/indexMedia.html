@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Esto es mala practica, solo para modificar el tamaño del video -->
+    <style>
+      video {
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Insertar un video -->
+
+    <!-- Solo aparece video sinreproducirse -->
+    <!-- <video src="./media/istockphoto-1457982836-640_adpp_is.mp4"></video> -->
+
+    <!-- Video con controles para reproducir, parar, retroceder, etc -->
+    <!-- <video src="./media/istockphoto-1457982836-640_adpp_is.mp4" controls></video> -->
+    <!-- Hay propiedades que necesitan un valor como src y propiedades booleanas como controls, que si aparecen es true y de lo contrario false -->
+
+    <!-- Para que se reproduzca al carga la pagina -->
+    <!-- <video src="./media/istockphoto-1457982836-640_adpp_is.mp4" autoplay></video> -->
+
+    <!-- Para que tenga una imagen previa a reproducir el video -->
+    <video
+      src="./media/istockphoto-1457982836-640_adpp_is.mp4"
+      controls
+      poster="./media/Barbados_beach.jpg"
+    ></video>
+
+    <!-- Para insertar un archivo de audio -->
+
+    <audio src="./media/file_example_MP3_700KB.mp3" controls></audio>
+
+    <!-- Para embeber una pagina web dentro de la mia (en este caso Maps) -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26183.551763352156!2d-58.52592542726662!3d-34.88275325083695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd73d1070a073%3A0x6d9b0590d1fce919!2sPerito%20Moreno%20845%2C%20Canning%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715031612570!5m2!1ses!2sar"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- Para embeber un video de youtube -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/ZjwCEVLn8V0?si=2Z3_wmYTixQE4G_p"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

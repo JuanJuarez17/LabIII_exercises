@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form action="" method=""></form> -->
+
+    <!-- Action: Url donde esta la pagina del servidor que procesa los datos que nosotros enviamos -->
+    <!-- method puede ser put o get, si no ponemos nada por defecto es get -->
+
+    <form action="#">
+      <label for="txtNombre">Nombre:</label>
+      <!-- for: Me enzala el label con el input text al hacer click sobre el -->
+      <input
+        type="text"
+        name="nombre"
+        id="txtNombre"
+        placeholder="Ingrese su nombre aqui..."
+        autocomplete="off"
+      />
+      <!-- name="nombre" Nombre de la variable que cargo en el input type text -->
+
+      <!-- <input type="text" name="nombre" id="txtNombre" readonly required/> -->
+      <!-- readonly Solo lectura -->
+      <!-- required Completar si o si -->
+
+      <!-- Input text con label anidado -->
+      <label>Apellido: <input type="text" name="apellido" /></label>
+
+      <label for="txtEmail">Email:</label>
+      <input type="email" title="Email" name="email" id="txtEmail" />
+      <!-- type="email" contiene un analizador de expresiones regulares que me solicita un @ en el ingreso-->
+
+      <label for="txtEdad">Edad:</label>
+      <input
+        type="number"
+        name="edad"
+        id="txtEdad"
+        min="18"
+        max="65"
+        value="20"
+      />
+
+      <label for="rango">Rango:</label>
+      <input
+        type="range"
+        name="rango"
+        id="rango"
+        min="18"
+        max="65"
+        value="60"
+      />
+
+      <input type="color" name="color" id="txtColor" />
+
+      <label for="txtPassword">Clave</label>
+      <input type="password" name="clave" id="txtPassword" />
+
+      <fieldset>
+        <legend>Deportes</legend>
+        <!-- Se puede trabajar con el atributo cheked -->
+        <input type="checkbox" name="Futbol" />Futbol <br />
+        <!-- Cuando se envia por form, viaja el valor del atributo cheked (on/off) -->
+        <input type="checkbox" name="Tenis" />Tenis <br />
+        <input type="checkbox" name="Golf" />Golf <br />
+
+        <!-- Se puede trabajar con el atributo value (Se envia ocmo un array de deportes) -->
+        <input type="checkbox" name="Deportes" value="Natacion" />Natacion
+        <br />
+        <input type="checkbox" name="Deportes" value="Boxeo" />Boxeo <br />
+        <input type="checkbox" name="Deportes" value="Padel" />Padel <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Genero</legend>
+        <input type="radio" name="genero" value="M" checked>Masculino
+        <input type="radio" name="genero" value="F">Femenino
+        <!-- Como ambos input:radio tienen el mismo name, son mutuamente excluyentes, es devir puedo elegir uno o el otro -->
+      </fieldset>
+
+      <input type="submit" value="Alta Persona" />
+      <input type="file">
+      <select name="localidades" id="">
+        <option value="quilmes">Quilmes</option>
+        <option value="avellaneda">Avellaneda</option>
+        <option value="ezeiza" selected>Ezeiza</option>
+        <option value="bernal">Bernal</option>
+      </select>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    <button id="bntClick">Click Me</button>
+    <!-- El formulario tiene un evento submit, el cual es activado por el imput submit -->
+  </body>
+</html>

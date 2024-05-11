@@ -17,6 +17,7 @@ document.getElementById("btnClose").addEventListener("click", () => {
 
     // Forma 1
     // document.getElementsByTagName("dialog")[0].open = false
+    
     // Forma 2
     document.getElementsByTagName("dialog")[0].removeAttribute("open")
 })
